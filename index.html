@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- custom style  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- bootstap.min.css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg mb-3 p-3">
+      <div class="container-fluid">
+        <img src="./icon/OCR.best.svg" alt="" />
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PDF To Text</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> PDF To Word</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Image To Text</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <!-- <li class="nav-item"> -->
+
+            <!-- <div ></div> -->
+            <li class="nav-item mt-3">
+              <a href="#" id="google_translate_element"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <div class="header">
+      <div class="text-header">
+        <h1 class="header-h1">Free Online OCR</h1>
+        <p>
+          We provide a free online OCR <br />converter to copy text from images.
+        </p>
+      </div>
+    </div>
+    <!-- Ocr container -->
+    <div class="card" style="width: 30rem;">
+
+      <div class="card-body">
+			
+		
+        
+        <p class="card-text">
+      <div class="drag-file-area">
+
+          <div class="image-container">
+              <div class="loader" id="loader1" ></div>
+            <img src="" alt="" id="newImage"  class="mix-image mt-3">
+
+            <img src="./icon/image-gallery.png" alt="Upload Image" id="uploadImage" />
+            <input type="file" id="imageInput" class="file-data mt-3" />
+            
+          </div>
+          <h6 id="card-p">Drag & Drop files here to upload</h6>
+          <button onclick="validateAndPerformOCR()" class="box-btn mt-2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Extract Text</button>
+        </p>
+      </div>
+      </div>
+    </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="card-body">
+              <div class="modal-body text-center">
+                <div id="loader" class="custom-loader"></div>
+                <div id="result"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!-- Our Features -->
+    <div class="container">
+      <div class="feature-header">
+        <h1 class="header-h1">Our Features</h1>
+      </div>
+      <div class="features">
+        <div class="feature-footer">
+          <div class="feature-left">
+            <h4 style="color: #023c89">
+              Drag and drop feature give us best experience.
+            </h4>
+            <ol class="custom-list mt-3">
+              <li>Add & delete plan easily</li>
+              <li>Edit your good preview on cardy</li>
+              <li>Easy to use like playing game</li>
+            </ol>
+          </div>
+          <div class="feature-right">
+            <div class="container text-right">
+              <div class="row row-cols-sm-1 row-cols-md-2">
+                <div class="col">
+                  <img src="./icon/feature1.svg" alt="" />
+                  <h4 class="feature-h3 mt-4">Best Free OCR Online</h4>
+                  <p class="mt-4">
+                    We have the best online OCR tool that converts image to text
+                    using A.I techniques.
+                  </p>
+                </div>
+                <div class="col">
+                  <img src="./icon/feature2.svg" alt="" />
+                  <h4 class="feature-h3 mt-4">No Daily Limit</h4>
+                  <p class="mt-4">
+                    Convert unlimited pictures into text with no daily limit.
+                  </p>
+                </div>
+                <div class="col mt-3">
+                  <img src="./icon/feature3.svg" alt="" />
+                  <h4 class="feature-h3 mt-4">Any Type of pic</h4>
+                  <p class="mt-4">
+                    Our free online OCR converter can get a text from scanned
+                    documents, low-resolution photos, or even math expressions.
+                  </p>
+                </div>
+                <div class="col mt-3">
+                  <img src="./icon/feature4.svg" alt="" />
+                  <h4 class="feature-h3 mt-4">Copy / Download</h4>
+                  <p class="mt-4">
+                    Download word file or copy text from the image with just one
+                    click.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="main-content mb-2">
+        <h2 style="color: #023c89" class="mt-5">
+          How to use Free online OCR converter?
+        </h2>
+        <p class="mt-3 content-p">
+          We are going to discuss that how you can use this best OCR online free
+          tool to extract text from images:
+        </p>
+        <ol class="custom-list mt-3 content-p">
+          <li>Drag and drop Image to the input field</li>
+          <li>Or you can also upload a file from your device</li>
+          <li>Verify the reCAPTCHA.</li>
+          <li>Click on the Convert button</li>
+          <li>You’ll get the editable text</li>
+          <li>You can copy the text or download it as a docx or .txt file.</li>
+        </ol>
+        <h2 style="color: #023c89" class="mt-4">What is OCR.best?</h2>
+        <p class="content-p">
+          OCR.best is an AI-based tool that converts image into text with great
+          accuracy. Using this tool is as simple as uploading the image and
+          copying the text. With this ocr converter online, you can convert
+          image to text at one click and its totally free.
+        </p>
+        <h2 style="color: #023c89" class="mt-4">
+          What is an online OCR translator?
+        </h2>
+        <p class="content-p">
+          OCR translator is an online tool used to translate image into text. It
+          compares the objects presented in the image with the objects in the
+          tool's database at microscopic level. OCR.best uses OCR
+          <span style="color: rgb(235, 146, 64)"
+            >(Optical Character Recognition)</span
+          >
+          technology for comparison. Its core recognition program is powered by
+          two of the best machine learning libraries TensorFlow and
+          Scikit-learn.
+        </p>
+      </div>
+      <div class="boxes mt-5">
+        <div class="box-1">
+          <img src="./icon/box1.svg" alt="" class="mt-3" />
+          <h4 class="mt-3">OCR</h4>
+          <p class="content-p">
+            Extracts data from <br />
+            structured docs
+          </p>
+          <img src="./icon/boxArrow.svg" alt="" width="15%" />
+          <p class="content-p mt-4">
+            A template is used to target <br />
+            extraction points
+          </p>
+        </div>
+        <div class="col box-2">
+          <img src="./icon/box2.svg" alt="" class="mt-3" />
+          <h4 class="mt-3">OCR + ML</h4>
+          <p class="content-p">
+            Extracts data structured <br />docs with some variations
+          </p>
+          <img src="./icon/boxArrow.svg" alt="" width="15%" />
+          <p class="content-p mt-4">
+            ML is used to help fit <br />documents into a template<br />
+            soan OCR can process it
+          </p>
+        </div>
+        <div class="col box-3">
+          <img src="./icon/box3.svg" alt="" class="mt-3" />
+          <h4 class="mt-3">Intelligent Data Processing</h4>
+          <p class="content-p">
+            Extracts information from<br />
+            unstructured docs and images
+          </p>
+          <img src="./icon/boxArrow.svg" alt="" width="15%" />
+          <p class="content-p mt-4">
+            ML finds, extracts, and <br />
+            cleans extraction points <br />
+            (template -free)
+          </p>
+        </div>
+      </div>
+      <div class="container-content">
+        <p class="content-p mt-5">
+          There were the times when we needed to retrieve data from the images
+          and the process of writing every word from an image was a hectic task.
+          AI OCR online tool is developed as a solution to this problem. All you
+          need to do is upload the specified image, and this OCR photo to text
+          converter will convert it to text in a matter of seconds.
+        </p>
+        <h2 style="color: #023c89" class="mt-4">
+          Why do we need online OCR converter?
+        </h2>
+        <p class="content-p mt-4">
+          Using an AI online OCR free tool for OCR picture to text conversion
+          improves the process of automation. It makes our tasks more
+          hassle-free as well as error-free. The tool will help decrease your
+          efforts and increase your productivity especially when you have to
+          convert bulk images to text. The good thing about Image to free ocr
+          online converter is that you can convert photos to text by just
+          uploading the OCR image online with a single click. This OCR free
+          online converter provides a simple interface for converting image to
+          text. Credit should be given where it’s due, our dedicated team of
+          developers did an outstanding job by developing the recognition
+          algorithms to achieve 100% accuracy.
+        </p>
+      </div>
+      <div class="content-box">
+        <div class="content-left">
+          <h2 style="color: #023c89">How does free online OCR work?</h2>
+          <p class="content-p mt-4">
+            In terms of the technology used in this tool, OCR and machine
+            learning are employed to convert images to text. OCR stands for
+            optical character recognition and it works by identifying the
+            objects (characters) in an image using optical technology. Whether
+            it's a computer-printed document or handwritten paper, OCR can read
+            it especially when it's working together with the AI. You can upload
+            your image or drag and drop the image. It automatically converts the
+            image into text when you upload it.
+          </p>
+        </div>
+        <div class="content-right">
+          <img src="./icon/content-box.svg" alt="" />
+        </div>
+      </div>
+      <div class="content-box2 mt-5">
+        <h2 style="color: #023c89">Why this online OCR tool?</h2>
+        <p class="content-p mt-4">
+          Hundreds of Image to OCR tools are available on the internet, but some
+          noticeable features set this tool apart from others.
+        </p>
+        <p class="content-p mt-4">
+          Below are the prominent features of this tool:
+        </p>
+      </div>
+      <div class="content-image">
+        <div class="content-list">
+          <ol class="content-p">
+            <li
+              class="content-box-list mt-3"
+              onclick="changeContent('Free of cost', 'Because of the AI integration in the free online OCR converter, the tool is extremely accurate. The machine learning algorithm helps this best online free OCR image to text tool to correctly recognize poorly written text because it facilitates a better understanding of the object. The AI-based online OCR to Word converter is always a better option for converting handwritten assignments into a digital format as well as converting old printed documents into editable Word Doc, Docx formats.')"
+            >
+              <span class="dot"></span>Free of cost
+            </li>
+            <li
+              class="content-box-list mt-3"
+              onclick="changeContent('Powered by Artificial Intelligence', 'Because of the AI integration in the free online ocr converter, the tool is extremely accurate. The machine learning algorithm helps this best online free OCR image to text tool to correctly recognize poorly written text because it facilitates a better understanding of the object. The AI-based online ocr to word converter is always a better option for converting handwritten assignments into digital format as well as converting old printed documents into editable Word Doc,Docx formats.')"
+            >
+              <span class="dot"></span>Powered by Artificial Intelligence
+            </li>
+            <li
+              class="content-box-list mt-3"
+              onclick="changeContent('Supports multiple languages', 'You can use this online free OCR tool regardless of whether your images are in English, Korean, or another language. There are multiple options available to you. You can choose any language from the dropdown menu. Choose the language of your image before uploading it. As a result, the image will be translated into text more accurately.')"
+            >
+              <span class="dot"></span>Supports multiple languages
+            </li>
+            <li
+              class="content-box-list mt-3"
+              onclick="changeContent('Text can be downloaded', 'After converting a picture into text, the tool offers three options to save the text.Copy the text in your clipboard Save the text in Txt Format Save the text in Doc/Docx format You can click on the download button once youve converted your image into text and your download will begin immediately.')"
+            >
+              <span class="dot"></span>Text can be downloaded
+            </li>
+            <li
+              class="content-box-list mt-3"
+              onclick="changeContent('Multiple picture format', 'You don’t need to convert your image into a specific format because this tool supports several formats like JPG, JPEG, JPI, etc. The formats which are offered by this ocr online image to text tool are:')"
+            >
+              <span class="dot"></span>Multiple picture format
+            </li>
+            <li
+              class="content-box-list mt-3"
+              onclick="changeContent('Security assurance', 'We do not store any images that are converted through this online ocr scanner. Your data is 100% secure and all images are automatically deleted from our database right after the conversion.')"
+            >
+              <span class="dot"></span>Security assurance
+            </li>
+            <li
+              class="content-box-list mt-3"
+              onclick="changeContent('Maximum Accuracy', 'Equipped with advanced technology, the online ocr to text is completely error-free and offers high accuracy. You got handwritten notes or images from your camera, there is no need to worry. Just try out this tool to get whatever text your images hold.')"
+            >
+              <span class="dot"></span>Maximum Accuracy
+            </li>
+          </ol>
+        </div>
+        <div class="content-para">
+          <h2 style="color: #023c89" id="contentHeading">Free of cost</h2>
+          <p class="content-p mt-4" id="contentParagraph">
+            Because of the AI integration in the free online OCR converter, the
+            tool is extremely accurate. The machine learning algorithm helps
+            this best online free OCR image to text tool to correctly recognize
+            poorly written text because it facilitates a better understanding of
+            the object. The AI-based online OCR to Word converter is always a
+            better option for converting handwritten assignments into a digital
+            format as well as converting old printed documents into editable
+            Word Doc, Docx formats.
+          </p>
+        </div>
+      </div>
+      <!-- asked  question -->
+
+      <div class="frequently">
+        <h1 class="text-center mt-5" style="color: #023c89">
+          Frequently Asked Questions
+        </h1>
+
+        <div class="question-1 mt-5">
+          <h2>How can I convert images to text free?</h2>
+          <p class="content-p mt-4 mb-4">
+            OCR.best's online image to text OCR online converter lets you easily
+            transform any image into text without paying for it. All you have to
+            do is upload the image and copy the text.
+          </p>
+          <hr />
+        </div>
+        <div class="question-2">
+          <h2>How do I convert a picture to normal text?</h2>
+          <p class="content-p mt-4 mb-4">
+            If your picture has some text and you want to copy this text, an
+            online ocr translator is helpful in this scenario. It will instantly
+            convert the image into text with better accuracy.
+          </p>
+          <hr />
+        </div>
+        <div class="question-3">
+          <h2>How do I extract text from a screenshot?</h2>
+          <p class="content-p mt-4 mb-4">
+            Go to OCR.best. Upload the screenshot once you have taken it. It
+            will convert it to text automatically. Then you can copy or download
+            on your device.
+          </p>
+          <hr />
+        </div>
+        <div class="question-4">
+          <h2>What is a good tool to extract text from image online?</h2>
+          <p class="content-p mt-4 mb-4">
+            OCR.best is a free tool that you can use to extract text from images
+            online. There are a lot of different alternatives as well, such as
+            <span style="color: rgb(235, 146, 64)">Imagetotext.info</span> that
+            you can also try for free.
+          </p>
+          <hr />
+        </div>
+      </div>
+      <!-- download -->
+      <div class="download mt-5">
+        <div class="download-left">
+          <h1 style="color: #023c89">Download OCR App</h1>
+          <p class="content-p mt-4 mb-4">
+            Now you can download our image to text OCR App on Android & IOS
+            devices. Simple click on Google Play & Apple Store button.
+          </p>
+        </div>
+        <div class="download-right">
+          <img src="./icon/playstore.svg" alt="" />
+          <img src="./icon/applestore.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- feedback -->
+    <a
+      class="feedback-button-link rotate"
+      href="www.surveymonkey.com"
+      target="_blank"
+    >
+      <div class="btn-feedback">
+        <h5 class="btn-feedback-p">Feedback</h5>
+      </div>
+      <img src="./icon/messenger.png" alt="" class="feedback-icon" />
+    </a>
+
+    <!-- footer -->
+    <img src="./icon/line.svg" alt="" class="mt-5" width="100%" />
+
+    <div class="footer">
+      <div class="text-left">
+        <div class="row footer-row">
+          <div class="col mt-5">
+            <h1 style="color: #023c89">About</h1>
+            <h6 style="color: #56769f" class="mt-3">
+              OCR.best is AI-Based Optical Character Recognition (OCR) software
+              which extract text from images and convert into .txt or docs
+              format.
+            </h6>
+          </div>
+          <div class="col mt-5">
+            <h1 style="color: #023c89">Information</h1>
+            <h6 style="color: #56769f" class="mt-3">Terms & Conditions</h6>
+
+            <h6 style="color: #56769f">Privacy Policy</h6>
+          </div>
+          <div class="col mt-5">
+            <h1 style="color: #023c89">Contact Us</h1>
+            <h6 style="color: #56769f" class="mt-3">Get in touch</h6>
+            <h6 style="color: #56769f">support@ocr.best</h6>
+          </div>
+          <div class="col mt-5">
+            <h1 style="color: #023c89">Follow Us</h1>
+            <div class="icon mt-3">
+              <img src="./icon/twitter-new.svg" alt="" />
+              <img src="./icon/fb-new.svg" alt="" />
+              <img src="./icon/linkedinIcon.svg" alt="" />
+              <img src="./icon/pinterest_Icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <h5 class="text-center" style="color: #56769f">
+          Copyright © All rights reserved By
+          <span style="color: rgb(235, 146, 64)">OCR.best</span>
+        </h5>
+      </div>
+    </div>
+
+
+    
+    <!-- custom js  -->
+    <script src="./javascript.js"></script>
+    <!-- bootstrap.min.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+  </body>
+</html>

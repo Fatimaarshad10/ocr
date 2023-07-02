@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5cdce2"/>
+      <stop offset="1" stop-color="#e4fdff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7777d8"/>
+      <stop offset="1" stop-color="#4242a8"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_10430" data-name="Group 10430" transform="translate(-9197 -9090)">
+    <rect id="Rectangle_6517" data-name="Rectangle 6517" width="45" height="45" rx="22.5" transform="translate(9197 9090)" opacity="0.64" fill="url(#linear-gradient)"/>
+    <path id="twitter" d="M20.276,7.955c.014.2.014.4.014.6A13.087,13.087,0,0,1,7.113,21.735,13.088,13.088,0,0,1,0,19.656a9.581,9.581,0,0,0,1.119.057,9.276,9.276,0,0,0,5.75-1.978,4.64,4.64,0,0,1-4.331-3.212,5.84,5.84,0,0,0,.875.072,4.9,4.9,0,0,0,1.219-.158A4.632,4.632,0,0,1,.918,9.891V9.834a4.668,4.668,0,0,0,2.093.588A4.639,4.639,0,0,1,1.578,4.227a13.165,13.165,0,0,0,9.55,4.847,5.229,5.229,0,0,1-.115-1.061,4.636,4.636,0,0,1,8.015-3.169,9.119,9.119,0,0,0,2.939-1.119,4.619,4.619,0,0,1-2.036,2.552A9.285,9.285,0,0,0,22.6,5.56a9.956,9.956,0,0,1-2.323,2.395Z" transform="translate(9208.828 9099.81)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

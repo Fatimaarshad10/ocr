@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5cdce2"/>
+      <stop offset="1" stop-color="#e4fdff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7777d8"/>
+      <stop offset="1" stop-color="#4242a8"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_10431" data-name="Group 10431" transform="translate(-9136 -9090)">
+    <rect id="Rectangle_6519" data-name="Rectangle 6519" width="45" height="45" rx="22.5" transform="translate(9136 9090)" opacity="0.64" fill="url(#linear-gradient)"/>
+    <path id="facebook" d="M12.7,12.461l.617-4.007H9.466V5.85a2,2,0,0,1,2.259-2.166h1.749V.271A21.328,21.328,0,0,0,10.372,0C7.2,0,5.131,1.92,5.131,5.4V8.453H1.609v4.009H5.131v9.694H9.465V12.462Z" transform="translate(9151.646 9101.067)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

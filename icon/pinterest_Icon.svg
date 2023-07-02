@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5cdce2"/>
+      <stop offset="1" stop-color="#e4fdff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7777d8"/>
+      <stop offset="1" stop-color="#4242a8"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_10428" data-name="Group 10428" transform="translate(-9315 -9090)">
+    <rect id="Rectangle_6515" data-name="Rectangle 6515" width="45" height="45" rx="22.5" transform="translate(9315 9090)" opacity="0.64" fill="url(#linear-gradient)"/>
+    <path id="pinterest" d="M22.238,19.119A11.12,11.12,0,0,1,7.828,29.74a12.5,12.5,0,0,0,1.381-2.914c.135-.52.69-2.645.69-2.645a2.978,2.978,0,0,0,2.547,1.278c3.354,0,5.77-3.085,5.77-6.918a6.526,6.526,0,0,0-6.855-6.42c-4.8,0-7.348,3.219-7.348,6.73,0,1.632.87,3.663,2.255,4.309.211.1.323.054.372-.148.036-.152.224-.91.309-1.26a.333.333,0,0,0-.076-.318,4.379,4.379,0,0,1-.82-2.538,4.812,4.812,0,0,1,5.021-4.824,4.39,4.39,0,0,1,4.645,4.524c0,3.008-1.52,5.093-3.5,5.093a1.613,1.613,0,0,1-1.645-2.009,22.343,22.343,0,0,0,.919-3.7,1.4,1.4,0,0,0-1.408-1.565c-1.116,0-2.013,1.152-2.013,2.7a4.006,4.006,0,0,0,.332,1.65s-1.1,4.654-1.3,5.524a10.763,10.763,0,0,0-.04,3.192A11.12,11.12,0,1,1,22.238,19.119Z" transform="translate(9326.68 9093.331)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>
